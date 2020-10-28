@@ -23,7 +23,8 @@ $product = $catalogue->getProduct($codeProduct);
 <section class="webshop">
     <h2 class="webshop__title">My first webshop <a href="cart.php" class="cart-icon">Winkelmandje</a></h2>
     <div class="product">
-                    <img src="<?php echo $product->getImage_url()?>" alt="foto" width="300px" class="foto">
+                    <img src="<?php echo $product->getImage_url_1()?>" alt="foto" height="150px" width="200px" class="foto">
+                    <img src="<?php echo $product->getImage_url_2()?>" alt="foto" height="150px" width="200px" class="foto">
                     <p>$<?php echo $product->getPrice() ?>.-</p>
                     <h3><?php echo $product->getTitle() ?></h3>
                     <p><?php echo $product->getDescription() ?></p>

@@ -33,7 +33,7 @@ class ProductCatalogue
         $json = file_get_contents($json_file);
         $data = json_decode($json, true);
         foreach ($data as $product) {
-            $this->products[] = new Product($product['code'], $product['title'], $product['image_url'], $product['price'], $product['description']);
+            $this->products[] = new Product($product['code'], $product['title'], $product['image_url_1'], $product['image_url_2'], $product['price'], $product['description']);
         }
     }
 

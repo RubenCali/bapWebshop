@@ -62,7 +62,8 @@ if (isset($_GET['action'])) {
 
                 <?php foreach ($shoppingCart->getProducts() as $index => $product): ?>
                     <div class="shopping-cart__item">
-                        <img src="<?php echo $product->getImage_url()?>" alt=" foto" width="70px">
+                        <img src="<?php echo $product->getImage_url_1()?>" alt=" foto" width="70px">
+                        <img src="<?php echo $product->getImage_url_2()?>" alt=" foto" width="70px">
                         <h4><?php echo $product->getTitle() ?> </h4>
                         <span class="price"><?php echo $product->getPrice() ?>  </span>
                         <a href="cart.php?action=remove_item&item_index=<?php echo $index?>" class="cart__remove">verwijderen</a>

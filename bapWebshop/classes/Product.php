@@ -5,17 +5,19 @@ class Product
 {
 
     private $title;
-    private $image_url;
+    private $image_url_1;
+    private $image_url_2;
     private $price;
     private $description;
     private $code;
 
-    public function __construct($code, $title, $image_url, $price, $description)
+    public function __construct($code, $title, $image_url_1, $image_url_2, $price, $description)
     {
 
         $this->code = $code;
         $this->title = $title;
-        $this->image_url = $image_url;
+        $this->image_url_1 = $image_url_1;
+        $this->image_url_2 = $image_url_2;
         $this->price = $price;
         $this->description = $description;
 
@@ -45,9 +47,13 @@ class Product
     {
         return $this->description;
     }
-    public function getImage_url()
+    public function getImage_url_1()
     {
-        return $this->image_url;
+        return $this->image_url_1;
+    }
+    public function getImage_url_2()
+    {
+        return $this->image_url_2;
     }
     public function getPrice()
     {
