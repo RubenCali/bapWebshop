@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+.webshop {
+    width: 80%;
+    margin: 0 auto;
+}
+.cart-button:hover {
+    background: #d4282b;
+}
+.cart-button {
+    display: inline-block;
+    background: #d82c2e;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-out;
+    text-decoration: none;
+    margin: 10px 0;
+    color: white;
+}
+
+.webshop__title {
+    position: relative;
+    background: #d82c2e;
+    padding: 20px;
+    color: white;
+}
+
+.cart-icon {
+    position: absolute;
+    right: 0;
+    padding-left: 42px;
+    padding-right: 20px;
+    line-height: 32px;
+    background: url(../img/shopping-cart-icon.svg) no-repeat left center;
+    font-size: 18px;
+    color: #fff;
+}
+.foto:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+.product{
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    padding: 15px;
+}
+.product:hover{
+    transform: scale(1.03);
+    transition: .3s;
+     box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.2);
+     color: white;
+     background: #d82c2e;
+}
+.detail-btn{
+    padding: 7px 10px;
+    color: white;
+    background-color: violet;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
