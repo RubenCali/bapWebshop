@@ -25,7 +25,7 @@ $catalogue = new ProductCatalogue('products.json');
         <div class="catalogue">
             <?php foreach ($catalogue->getAllProducts() as $product ): ?>
                 <div class="product">
-                    <img src="<?php echo $product->getImage_url()?>" alt="foto" width="130px" >
+                    <img src="<?php echo $product->getImage_url()?>" alt="foto" width="130px" class="foto">
                     <p>$<?php echo $product->getPrice() ?>.-</p>
                     <h3><?php echo $product->getTitle() ?></h3>
                     <p><?php echo $product->getDescription() ?></p>
